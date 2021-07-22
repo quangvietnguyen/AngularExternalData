@@ -1,0 +1,12 @@
+li {
+    background: rgba(0,0,255,0.5); 
+    border: thin solid navy;
+    padding: 1‘0px; 
+    margin: 0px 10px 5px 10px;
+    list-style-type:none; 
+    text-align: center;
+}
+li div {
+    background:bisque;
+}
+

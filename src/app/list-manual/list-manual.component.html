@@ -1,0 +1,22 @@
+<ul>
+    <li *ngFor="let item of myclasses; let i=index;" (click)="onClickMe(i)">
+        {{item.cname}}
+        <div *ngIf="goodToGo[i]">
+            <strong>Class Name:</strong> {{item.cname}}<br>
+            <strong>Room:</strong>{{item.room}}<br>
+            <strong>DOW:</strong>{{item.dow}}<br>
+            <strong>TOD:</strong>{{item.tod}}<br>
+        </div>
+    </li>
+</ul>
+<ul>
+    <li *ngFor="let item of myclasses; let i=index;" (click)="onClickMe2(i)">
+        {{item.cname}}
+        <div [ngStyle]="{display:goodStyle[i]}">
+            <strong>Class Name:</strong> {{item.cname}}<br>
+            <strong>Room:</strong>{{item.room}}<br>
+            <strong>DOW:</strong>{{item.dow}}<br>
+            <strong>TOD:</strong>{{item.tod}}<br>
+        </div>
+    </li>
+</ul>
