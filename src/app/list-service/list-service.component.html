@@ -1,1 +1,11 @@
-<p>list-service works!</p>
+<ul>
+    <li *ngFor="let item of myclasses;">
+        {{item.cname}}
+        <div>
+            <strong>Class Name:</strong> {{item.cname}}<br>
+            <strong>Room:</strong>{{item.room}}<br>
+            <strong>DOW:</strong>{{item.dow}}<br>
+            <strong>TOD:</strong>{{item.tod}}<br>
+        </div>
+    </li>
+</ul>
